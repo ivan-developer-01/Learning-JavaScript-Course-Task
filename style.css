@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Caveat";
+    src: url(Caveat-VariableFont_wght.ttf);
+}
+
+ul.task-links li {
+    display: inline-block;
+    min-width: 120px;
+    min-height: 40px;
+    background: rgb(32, 216, 32);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(119, 119, 119);
+    transition: 300ms;
+}
+
+ul.task-links li:hover {
+    background: rgb(40, 197, 40);
+}
+
+ul.task-links li a {
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    font-family: "Caveat";
+    font-size: 30px;
+}
+
+ul.task-links li a:visited {
+    color: rgb(0, 0, 0);
+}
