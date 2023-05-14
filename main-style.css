@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("Roboto-Regular.ttf");
+}
+
+.btn-back-wrapper  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-back {
+    background: #ceeb29;
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.button-back:hover {
+    background: #53ff1f;
+}
+
+body {
+    font-family: "Roboto Regular";
+    margin: 20px 100px;
+    padding: 10px 20px;
+    border: 8px solid rgb(143, 87, 15);
+    border-radius: 30px;
+}
