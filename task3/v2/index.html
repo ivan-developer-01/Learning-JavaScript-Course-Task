@@ -8,15 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul class="version-links">
-        <li>
-            <a href="v1/index.html">Версия 1 (Одно-кружная)</a>
-        </li>
-        <li>
-            <a href="v2/index.html">Версия 2 (Трёх-кружная)</a>
-        </li>
-    </ul>
+    <div id="trafficLight">
+        <div class="light" data-active-color="green"></div>
+        <div class="light" data-active-color="yellow"></div>
+        <div class="light" data-active-color="red"></div>
+    </div>
 
-    <script src="../add-important-elements.js"></script>
+    <script src="../../../add-important-elements.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
