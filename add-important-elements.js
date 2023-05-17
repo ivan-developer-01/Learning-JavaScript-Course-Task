@@ -64,3 +64,5 @@ function wait(msWait) {
         setTimeout(msWait, resolve);
     });
 }
+
+document.body.style.display = "block";
