@@ -6,15 +6,10 @@ const duplicateField = document.querySelector("#duplicateField");
 form.addEventListener("submit", e => e.preventDefault());
 
 submitButton.addEventListener("click", () => {
-    duplicateField.textContent = textInput.value || "<Нет текста>";
+    console.log(textInput.value || "<Нет текста>");
     textInput.value = "";
 });
 
-// just in case
-textInput.addEventListener("keydown", (event) => {
-    if (event.keyCode === 13 || event.key === "Enter") {
-        event.preventDefault();
-        duplicateField.textContent = textInput.value || "<Нет текста>";
-        textInput.value = "";
-    }
+textInput.addEventListener("input", () => {
+    duplicateField.textContent = textInput.value || "<Нет текста>";
 });
