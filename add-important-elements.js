@@ -51,6 +51,9 @@ buttonWrapper.classList.add("btn-back-wrapper");
 buttonWrapper.appendChild(elementButtonBack);
 
 const buttonWrapper2 = buttonWrapper.cloneNode(true);
+buttonWrapper2.querySelector("button").addEventListener("click", () => {
+    history.back();
+});
 
 elementToInsertElement.prepend(buttonWrapper);
 elementToInsertElement.appendChild(buttonWrapper2);
